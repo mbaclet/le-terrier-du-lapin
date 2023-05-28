@@ -19,6 +19,7 @@ export class DicerollerComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.roll = true;
   }
 
   private getRandomIntd20() {
