@@ -1,0 +1,33 @@
+<div>
+  <div>
+    <div *ngIf="!submitted">
+      <div>
+        <label for="firstName">First Name</label>
+        <input
+          type="text"
+          id="firstName"
+          required
+          [(ngModel)]="user.firstName"
+          name="firstName"
+        />
+      </div>
+
+      <div>
+        <label for="lastName">Last Name</label>
+        <input
+          id="lastName"
+          required
+          [(ngModel)]="user.lastName"
+          name="lastName"
+        />
+      </div>
+
+      <button (click)="saveUser()">Submit</button>
+    </div>
+
+    <div *ngIf="submitted">
+      <h4>User was submitted successfully!</h4>
+      <button (click)="newUser()">Add</button>
+    </div>
+  </div>
+</div>

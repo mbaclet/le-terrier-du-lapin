@@ -6,6 +6,7 @@ import {UserDetailsComponent} from "./user/user-details/user-details.component";
 import {AddUserComponent} from "./user/add-user/add-user.component";
 import {RabbitComponent} from "./rabbit/rabbit.component";
 import {DicerollerComponent} from "./diceroller/diceroller.component";
+import {GenerateurVilleComponent} from "./generateur-ville/generateur-ville.component";
 
 const routes: Routes = [
   {path: "", component: HomeComponent},
@@ -13,7 +14,8 @@ const routes: Routes = [
   {path: "users/:id", component: UserDetailsComponent},
   {path: "add", component: AddUserComponent},
   {path: "rabbit", component: RabbitComponent},
-  {path: "dice", component: DicerollerComponent}
+  {path: "dice", component: DicerollerComponent},
+  {path: "ville", component: GenerateurVilleComponent}
 ];
 
 @NgModule({

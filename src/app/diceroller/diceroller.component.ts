@@ -13,7 +13,7 @@ export class DicerollerComponent implements OnInit {
   }
 
   diceRoller(): string {
-    let roll = this.getRandomIntd20();
+    let roll: number = this.getRandomIntd20();
 
     return "<h1>" + roll + "</h1>"
   }

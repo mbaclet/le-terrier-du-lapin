@@ -1,0 +1,47 @@
+<div class="text-center grid grid-cols-3">
+  <div class="mt-10 col-span-1">
+    <div>
+      <p>Race :</p>
+      <ul>
+        <li>Humain / Halfling = 1</li>
+        <li>Nain / Elfe = 2</li>
+        <li>Peaux-Vertes = 3</li>
+        <li>Skavens = 4</li>
+        <li>Vampire = 5</li>
+      </ul>
+    </div>
+    <div class="mt-10">
+      <p>Nation :</p>
+      <ul>
+        <li>Empire = 1</li>
+        <li>Kislev = 2</li>
+        <li>Tilée = 3</li>
+        <li>Estalie = 4</li>
+        <li>Nains = 5</li>
+        <li>Peaux-Vertes = 6</li>
+        <li>Norses = 7</li>
+        <li>Skavens = 8</li>
+        <li>Elfes = 9</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="mt-10 col-span-1">
+    <div class="flex justify-between">
+      <input #size class="mr-1 w-48" max="5" min="1" name="size" placeholder="Size" required type="number">
+      <input #race class="mr-1 w-48" max="5" min="1" name="race" placeholder="Race" required type="number">
+      <input #nation class="w-48" max="9" min="1" name="nation" placeholder="Nation" required type="number">
+    </div>
+    <button (click)="generateVille(size.valueAsNumber, race.valueAsNumber, nation.valueAsNumber)"
+            class="bg-teal-500 hover:bg-teal-400 text-white font-bold py-2 px-4 border-b-4 border-teal-700 hover:border-teal-500 rounded m-10">
+      Générer une ville
+    </button>
+  </div>
+
+  <div class="mt-10 col-span-1">
+    <p>Taille de la ville : {{taille}}</p>
+    <p>Population de la ville : {{population}}</p>
+    <p>Culte majoritaire de la ville : {{culte}}</p>
+    <p>Dirigeant de la ville : {{leader}}</p>
+  </div>
+</div>

@@ -1,0 +1,40 @@
+<div>
+  <div>
+    <input
+      [(ngModel)]="firstName"
+      class="form-control"
+      placeholder="Search by firstName"
+      type="text"
+    />
+    <div>
+      <button
+        (click)="searchFirstName()"
+        type="button"
+      >
+        Search
+      </button>
+    </div>
+  </div>
+</div>
+<div>
+  <h4>users List</h4>
+  <ul>
+    <li
+      (click)="setActiveUser(tutorial, i)"
+      *ngFor="let tutorial of users; let i = index"
+      [class.active]="i == currentIndex"
+    >
+      {{ tutorial.firstName }}
+    </li>
+  </ul>
+
+  <button (click)="removeAllUsers()">
+    Remove All
+  </button>
+</div>
+<div>
+  <app-user-details
+    [currentUser]="currentUser"
+    [viewMode]="true"
+  ></app-user-details>
+</div>
