@@ -1,0 +1,32 @@
+<div class="text-center grid grid-cols-3">
+  <div class="mt-10 col-span-1">
+    <div>
+      <p>Nation :</p>
+      <ul>
+        <li>Empire = 1</li>
+        <li>Kislev = 2</li>
+        <li>Tilée = 3</li>
+        <li>Estalie = 4</li>
+        <li>Nains = 5</li>
+        <li>Peaux-Vertes = 6</li>
+        <li>Norses = 7</li>
+        <li>Skavens = 8</li>
+        <li>Elfes = 9</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="col-span-1">
+    <input #nation class="w-48" max="9" min="1" name="nation" placeholder="Nation" required type="number">
+    <button (click)="generatePersonnage(nation.valueAsNumber)"
+            class="bg-teal-500 hover:bg-teal-400 text-white font-bold py-2 px-4 border-b-4 border-teal-700 hover:border-teal-500 rounded m-10">
+      Générer un personnage
+    </button>
+  </div>
+
+  <div class="mt-10 col-span-1">
+    <p>Nom du personnage : {{persoName}}</p>
+    <p>Foi du personnage : {{culte}}</p>
+    <p>Statistiques du personnage : {{stats}}</p>
+  </div>
+</div>

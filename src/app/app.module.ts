@@ -13,6 +13,8 @@ import {AddUserComponent} from './user/add-user/add-user.component';
 import {UserDetailsComponent} from './user/user-details/user-details.component';
 import {UserListComponent} from './user/user-list/user-list.component';
 import { GenerateurVilleComponent } from './generateur-ville/generateur-ville.component';
+import {NgOptimizedImage} from "@angular/common";
+import { GenerateurPersonnageComponent } from './generateur-personnage/generateur-personnage.component';
 
 @NgModule({
   declarations: [
@@ -24,14 +26,16 @@ import { GenerateurVilleComponent } from './generateur-ville/generateur-ville.co
     AddUserComponent,
     UserDetailsComponent,
     UserListComponent,
-    GenerateurVilleComponent
+    GenerateurVilleComponent,
+    GenerateurPersonnageComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-    HttpClientModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        FormsModule,
+        HttpClientModule,
+        NgOptimizedImage
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

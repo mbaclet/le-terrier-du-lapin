@@ -5,8 +5,7 @@ import {Injectable} from '@angular/core';
 })
 export class VilleService {
 
-  constructor() {
-  }
+  constructor() {}
 
   public whatIsRace(race: number, pop: number): number {
 
