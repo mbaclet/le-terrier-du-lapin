@@ -10,6 +10,7 @@ export class PersonnageService {
   }
 
   public randomStatsNumber(): number {
+
     let min: number = Math.ceil(8);
     let max: number = Math.floor(18);
     return Math.floor(Math.random() * (max - min)) + min;
@@ -30,7 +31,8 @@ export class PersonnageService {
     return "Corps : " + corps + " / Esprit : " + esprit + " / Aspect : " + aspect;
   }
 
-  public generateCulte(nation : number): string {
+  public generateCulte(nation: number): string {
+
     let vs: VilleService = new VilleService();
     return vs.generateCulte(nation);
   }

@@ -12,12 +12,13 @@
         <li>Norses = 7</li>
         <li>Skavens = 8</li>
         <li>Elfes = 9</li>
+        <li>Bretonnie = 10</li>
       </ul>
     </div>
   </div>
 
   <div class="col-span-1">
-    <input #nation class="w-48" max="9" min="1" name="nation" placeholder="Nation" required type="number">
+    <input #nation class="w-48" max="10" min="1" name="nation" placeholder="Nation" required type="number">
     <button (click)="generatePersonnage(nation.valueAsNumber)"
             class="bg-teal-500 hover:bg-teal-400 text-white font-bold py-2 px-4 border-b-4 border-teal-700 hover:border-teal-500 rounded m-10">
       Générer un personnage

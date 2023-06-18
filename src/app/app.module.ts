@@ -15,6 +15,7 @@ import {UserListComponent} from './user/user-list/user-list.component';
 import { GenerateurVilleComponent } from './generateur-ville/generateur-ville.component';
 import {NgOptimizedImage} from "@angular/common";
 import { GenerateurPersonnageComponent } from './generateur-personnage/generateur-personnage.component';
+import { SimulateurBatailleComponent } from './simulateur-bataille/simulateur-bataille.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { GenerateurPersonnageComponent } from './generateur-personnage/generateu
     UserDetailsComponent,
     UserListComponent,
     GenerateurVilleComponent,
-    GenerateurPersonnageComponent
+    GenerateurPersonnageComponent,
+    SimulateurBatailleComponent
   ],
     imports: [
         BrowserModule,

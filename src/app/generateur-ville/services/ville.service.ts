@@ -588,6 +588,64 @@ export class VilleService {
       "Nilthyce",
     ]
 
+    let bretonnieLeadersPrenom: string [] = [
+      "Simon",
+      "Evrard",
+      "Thiebaut",
+      "Gobin",
+      "Charles",
+      "Brandan",
+      "Vivien",
+      "Ernault",
+      "Jamet",
+      "Jaques",
+      "Huget",
+      "Jourdain",
+      "Henri",
+      "Emery",
+      "Oudin",
+      "Julien",
+      "Marguerite",
+      "Alberea",
+      "Denise",
+      "Thieffane",
+      "Guillemette",
+      "Ascelina",
+      "Aeliz",
+      "Agnez",
+      "Mahault",
+      "Agnès",
+      "Collette",
+      "Nicolete",
+    ]
+
+    let bretonnieLeadersNom: string [] = [
+      "Ternant",
+      "de Lolive",
+      "Chastel",
+      "Pidoye",
+      "Marchant",
+      "de Troyes",
+      "le Coq",
+      "Cyrasse",
+      "Favières",
+      "Gaiant",
+      "de l'Extrac",
+      "Morhier",
+      "Vauru",
+      "Cordelier",
+      "Mariette",
+      "Tuillieres",
+      "Poupart",
+      "de Pisex",
+      "Marle",
+      "Tourraine",
+      "Foucault",
+      "Paris",
+      "de Craon",
+      "Breban",
+    ]
+
     switch (nation) {
       case 1:
         prenom = empireLeadersPrenom.length ? empireLeadersPrenom[Math.floor(Math.random() * empireLeadersPrenom.length)] : prenom;
@@ -621,6 +679,8 @@ export class VilleService {
       case 9:
         prenom = elfesLeadersPrenom.length ? elfesLeadersPrenom[Math.floor(Math.random() * elfesLeadersPrenom.length)] : prenom
         break;
+      case 10: prenom = bretonnieLeadersPrenom.length ? bretonnieLeadersPrenom[Math.floor(Math.random() * bretonnieLeadersPrenom.length)] : prenom;
+        nom = bretonnieLeadersNom.length ? bretonnieLeadersNom[Math.floor(Math.random() * bretonnieLeadersNom.length)] : nom;
     }
 
     leader = prenom + " " + nom;
